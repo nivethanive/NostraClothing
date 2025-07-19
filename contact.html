@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+    <!--navbar-->
+    <nav class="p-4 flex items-center justify-between shadow-xl sticky top-0 z-10  bg-white">
+        <h1 class="text-2xl font-bold" style="color: #1D232C;">Nostra</h1>
+        <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+            class="w-6 h-6 md:hidden">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+        </svg>
+        <ul class="flex gap-32 text-gray-600 hidden md:flex ">
+            <li>
+                <a class="hover:underline hover:text-black" href="index.html">Home</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="#">New Arrival</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="#">Most Wanted</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="products.html">Collections</a>
+            </li>
+            <li>
+                <a class="hover:underline hover:text-black" href="contact.html">Contact Us</a>
+            </li>
+        </ul>
+    </nav>
+<div class="p-10">
+    <!--contact-->
+    <div class="max-w-2xl mx-auto bg-gray-900 text-white p-8 rounded-md">
+  <h2 class="text-2xl font-bold mb-6">Contact Us</h2>
+
+  <form>
+    <!-- Name -->
+    <div class="mb-6">
+      <label for="name" class="block mb-2 text-lg">Name:</label>
+      <input type="text" id="name" name="name" class="w-full p-3 rounded text-black" required>
+    </div>
+
+    <!-- Email -->
+    <div class="mb-6">
+      <label for="email" class="block mb-2 text-lg">Email:</label>
+      <input type="email" id="email" name="email" class="w-full p-3 rounded text-black" required>
+    </div>
+
+    <!-- Message -->
+    <div class="mb-6">
+      <label for="message" class="block mb-2 text-lg">Message:</label>
+      <textarea id="message" name="message" rows="5" class="w-full p-3 rounded text-black" required></textarea>
+    </div>
+
+    <!-- Submit Button -->
+    <button type="submit" class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-2 rounded">
+      Submit
+    </button>
+  </form>
+</div>
+<!--news-->
+<div class="news mt-3 p-10" style="text-align: center ; ">
+        <h2 class="font-bold text-3xl" style="color: #1D232C;">Join Our News Letter</h2>
+        <p class="text-xl mt-3"> Join Our Newsletter
+            Signup for our email newspaper to get exclusive discounts, updates, and more
+        </p>
+        <div>
+            <input class="border border-black p-2 m-3" style="width:70% ;" type="text">
+        </div>
+        <button
+            style="border: solid ; border-radius: 20px; background-color: #1D232C; color: whitesmoke; padding: 10px;">Subscribe</button>
+    </div>
+    </div>
+    
+    <!--footer-->
+    <!--footer-->
+    <div class="footer ">
+        <div class="footer-container text-2xl" style="background-color: #1D232C; color: whitesmoke; ">
+            <div class="footer-box-1 p-20">
+                <h2 class="heading text-2xl font-bold ">Nostra</h2>
+                <p class="footerpara mt-4">Redefining everyday fashion, one outfit at a time.
+                    Fast, free shipping | Support that’s always on your side
+                </p>
+                <div class="footer-icons p-2 ">
+                    <i class="fa-brands fa-instagram mr-2" style="color: white;"></i>
+                    <i class="fa-brands fa-x-twitter mr-2" style="color: white;"></i>
+                    <i class="fa-brands fa-facebook mr-2" style="color: white;"></i>
+                </div>
+                <p class="subtle">@2025 Nostra.com</p>
+            </div>
+            
+        </div>
+        
+
+    </div>
+
+</body>
+</html>
+

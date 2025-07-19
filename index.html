@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+
+<body>
+
+    <body class="overflow-x-hidden">
+        <!--offer section-->
+        <div style=" background-color: #1D232C; color: white;  " class=" offersection p-3 justify-center  text-sm md:text-2xl flex gap-4">
+            <p >Sign Up and <b>GET 20% OFF</b> for your first Order </p>
+                  <p id="xclose" class="cursor-pointer">X</p>
+            
+        </div>
+        <!--navbar-->
+        <nav class="p-4 flex items-center justify-between shadow-xl sticky top-0 z-10 bg-white">
+            <h1 class="text-2xl font-bold text-[#1D232C]">Nostra</h1>
+            <svg id="menuicon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6 md:hidden">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+            </svg>
+            <ul class="hidden md:flex gap-6 text-gray-600">
+                <li><a class="hover:underline hover:text-black" href="index.html">Home</a></li>
+                <li><a class="hover:underline hover:text-black" href="#">New Arrival</a></li>
+                <li><a class="hover:underline hover:text-black" href="#">Most Wanted</a></li>
+                <li><a class="hover:underline hover:text-black" href="products.html">Collections</a></li>
+                <li><a class="hover:underline hover:text-black" href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <!-- Slider Wrapper -->
+        <div class="container mx-auto py-8">
+            <div class="slider relative overflow-hidden h-[250px] md:h-[350px] rounded-xl">
+                <div class="slider-image-container flex h-full w-[300%]">
+                    <!-- Slide 1 -->
+                    <div class="relative w-full">
+                        <img class="w-full object-cover opacity-50 aspect-[3/1] " src="./images/banner1.jpg" />
+                        <div class="absolute inset-0 flex flex-col justify-center items-start px-4 md:px-10 text-white">
+                            <h1 class="text-xl md:text-4xl font-bold">Level up your Style with our</h1>
+                            <h2 class="text-md md:text-2xl mt-2">Summer Collections</h2>
+                            <button class="mt-4 bg-white text-black px-4 py-2 rounded-full text-sm md:text-base">Shop
+                                Now</button>
+                        </div>
+                    </div>
+                    <!-- Slide 2 -->
+                    <div class="relative w-full">
+                        <img class="w-full h-full object-cover opacity-50" src="./images/banner2.jpg" />
+                        <div class="absolute inset-0 flex flex-col justify-center items-start px-4 md:px-10 text-white">
+                            <h1 class="text-xl md:text-4xl font-bold">Step Into Style</h1>
+                            <h2 class="text-md md:text-2xl mt-2">New Arrivals Just Dropped</h2>
+                            <button class="mt-4 bg-white text-black px-4 py-2 rounded-full text-sm md:text-base">Shop
+                                Now</button>
+                        </div>
+                    </div>
+                    <!-- Slide 3 -->
+                    <div class="relative w-full">
+                        <img class="w-full h-full object-cover opacity-50" src="./images/banner3.jpg" />
+                        <div class="absolute inset-0 flex flex-col justify-center items-start px-4 md:px-10 text-white">
+                            <h1 class="text-xl md:text-4xl font-bold">Unleash Your Inner Fashionista</h1>
+                            <h2 class="text-md md:text-2xl mt-2">Trendy. Affordable. You.</h2>
+                            <button class="mt-4 bg-white text-black px-4 py-2 rounded-full text-sm md:text-base">Shop
+                                Now</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Nav Buttons -->
+                <div class="slider-left-button absolute left-2 top-1/2 -translate-y-1/2 z-20">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="30" height="30">
+                        <path fill="#adcddb"
+                            d="M380.6 81.7c7.9 15.8 1.5 35-14.3 42.9L103.6 256 366.3 387.4c15.8 7.9 22.2 27.1 14.3 42.9s-27.1 22.2-42.9 14.3l-320-160C6.8 279.2 0 268.1 0 256s6.8-23.2 17.7-28.6l320-160c15.8-7.9 35-1.5 42.9 14.3z" />
+                    </svg>
+                </div>
+                <div class="slider-right-button absolute right-2 top-1/2 -translate-y-1/2 z-20">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 384 512" width="30" height="30"
+                        transform="rotate(180)">
+                        <path fill="#adcddb"
+                            d="M380.6 81.7c7.9 15.8 1.5 35-14.3 42.9L103.6 256 366.3 387.4c15.8 7.9 22.2 27.1 14.3 42.9s-27.1 22.2-42.9 14.3l-320-160C6.8 279.2 0 268.1 0 256s6.8-23.2 17.7-28.6l320-160c15.8-7.9 35-1.5 42.9 14.3z" />
+                    </svg>
+                </div>
+            </div>
+        </div>
+
+        <!-- brands section -->
+        <div class="p-4">
+            <h2 class="text-xl md:text-2xl font-bold text-[#1D232C]">Brands</h2>
+            <div class="grid grid-cols-3 md:grid-cols-6 gap-4 p-4 items-center">
+                <div class="text-center">
+                    <img class="mx-auto" src="./images/puma.png" height="60" width="80">
+                    <p>Puma</p>
+                </div>
+                <div class="text-center">
+                    <img class="mx-auto" src="./images/adidas.png" height="60" width="80">
+                    <p>Adidas</p>
+                </div>
+                <div class="text-center">
+                    <img class="mx-auto" src="./images/recycable.png" height="60" width="80">
+                    <p>Simple</p>
+                </div>
+                <div class="text-center">
+                    <img class="mx-auto" src="./images/leaves.png" height="60" width="80">
+                    <p>Leaves</p>
+                </div>
+                <div class="text-center">
+                    <img class="mx-auto" src="./images/behance.png" height="60" width="80">
+                    <p>Behance</p>
+                </div>
+                <div class="text-center">
+                    <img class="mx-auto" src="./images/twitch.png" height="60" width="80">
+                    <p>Twitch</p>
+                </div>
+            </div>
+        </div>
+
+        <!--center-->
+        <div class="exp p-4 ">
+            <div class="service">
+                <div class="service-container-1 flex items-center justify-between " style="color: #1D232C;">
+                    <div class="text-2xl font-bold p-2">
+                        <h2>We Provide Best</h2>
+                        <h2>Customer Experiences</h2>
+                    </div>
+                    <div>
+                        <p>||We ensure that our customer have the best shopping experience</p>
+                    </div>
+                </div>
+                <div class="service-container-2 md:flex  ">
+                    <div class="border border-gray-50 p-2 m-6 bg-gray-200 ">
+                        <img class="center-image " height="70px" width="50px" src="./images/checked.png">
+                        <h4 class="text-xl font-bold p-2 mb-5">Original Products</h4>
+                        <p class="p-2">Where style meets soul – Elevate your everyday with designs that blend comfort
+                            and
+                            character.
+
+                        </p>
+                    </div>
+                    <div class="border border-grey-50 bg-gray-200 p-2 m-6">
+                        <img class="center-image" height="70px" width="50px" src="./images/happy-face.png">
+                        <h4 class="text-xl font-bold p-2"> Satisfaction Guarantee</h4>
+                        <p class="p-2">Love it or return it—your happiness is stitched into every purchase.
+
+                        </p>
+                    </div>
+                    <div class="border border-grey-50 bg-gray-200 p-2 m-6">
+                        <img class="center-image" height="70px" width="50px" src="./images/flying-broom.png">
+                        <h4 class="text-xl font-bold p-2">New Arrival Every Day</h4>
+                        <p class="p-2">Fresh drops daily to keep your wardrobe as dynamic as you are
+                        </p>
+                    </div>
+                    <div class="border border-grey-50 bg-gray-200 p-2 m-6">
+                        <img class="center-image" height="70px" width="50px" src="./images/sparkler.png">
+                        <h4 class="text-xl font-bold p-2">Fast & Free Shipping
+
+                        </h4>
+                        <p class="p-2">Speedy delivery, zero hassle—your style upgrade is already en route.
+
+                        </p>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- new arrival -->
+        <div class="new-arrival">
+            <h2 class="text-2xl font-bold p-4" style="color: #1D232C;">New Arrivals</h2>
+            <div class="new-arrival-box  flex  justify-between p-4 gap-4">
+                <div class="new-arrival-box1 relative rounded-md overflow-hidden" style="width: 20vw; height: 20vw;">
+                    <img class="outfit w-full h-full object-cover" src="./images/outfit1.jpg">
+                    <div class="absolute inset-0 bg-black opacity-60"></div>
+                    <button
+                        class="absolute inset-x-0 bottom-8 mx-auto bg-white px-6 py-3 rounded-lg font-medium text-lg hover:bg-gray-200 transition">
+                        Shop Now →
+                    </button>
+                </div>
+                <div class="new-arrival-box1 relative rounded-md overflow-hidden" style="width: 20vw; height: 20vw;">
+                    <img class="outfit w-full h-full object-cover" src="./images/outfit2.jpg">
+                    <div class="absolute inset-0 bg-black opacity-60"></div>
+                    <button
+                        class="absolute inset-x-0 bottom-8 mx-auto bg-white px-6 py-3 rounded-lg font-medium text-lg hover:bg-gray-200 transition">
+                        Shop Now →
+                    </button>
+                </div>
+                <div class="new-arrival-box1 relative rounded-md overflow-hidden" style="width: 20vw; height: 20vw;">
+                    <img class="outfit w-full h-full object-cover" src="./images/outfit3.jpg">
+                    <div class="absolute inset-0 bg-black opacity-60"></div>
+                    <button
+                        class="absolute inset-x-0 bottom-8 mx-auto bg-white px-6 py-3 rounded-lg font-medium text-lg hover:bg-gray-200 transition">
+                        Shop Now →
+                    </button>
+                </div>
+                <div class="new-arrival-box1 relative rounded-md overflow-hidden" style="width: 20vw; height: 20vw;">
+                    <img class="outfit w-full h-full object-cover" src="./images/outfit4.jpg">
+                    <div class="absolute inset-0 bg-black opacity-60"></div>
+                    <button
+                        class="absolute inset-x-0 bottom-8 mx-auto bg-white px-6 py-3 rounded-lg font-medium text-lg hover:bg-gray-200 transition">
+                        Shop Now →
+                    </button>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- most wanted -->
+        <div class="most-wanted">
+            <h2 class="text-2xl font-bold p-4" style="color: #1D232C;">Most Wanted</h2>
+            <div class="most-wanted-box flex justify-between p-4 gap-4">
+                <div class="most-wanted-box1 relative rounded-md overflow-hidden" style="width: 20vw; height: 20vw;">
+                    <img class="w-full h-full object-cover" src="./images/sale1.jpg">
+                    <p class="absolute top-2 left-2 bg-red-600 text-white text-sm px-2 py-1 rounded">sale</p>
+                    <img class="absolute bottom-2 right-2 w-7" src="./images/heart.png">
+                </div>
+                <div class="most-wanted-box1 relative rounded-md overflow-hidden" style="width: 20vw; height: 20vw;">
+                    <img class="w-full h-full object-cover" src="./images/sale2.jpg">
+                    <p class="absolute top-2 left-2 bg-red-600 text-white text-sm px-2 py-1 rounded">sale</p>
+                    <img class="absolute bottom-2 right-2 w-7" src="./images/heart.png">
+                </div>
+                <div class="most-wanted-box1 relative rounded-md overflow-hidden" style="width: 20vw; height: 20vw;">
+                    <img class="w-full h-full object-cover" src="./images/sale3.jpg">
+                    <p class="absolute top-2 left-2 bg-red-600 text-white text-sm px-2 py-1 rounded">sale</p>
+                    <img class="absolute bottom-2 right-2 w-7" src="./images/heart.png">
+                </div>
+                <div class="most-wanted-box1 relative rounded-md overflow-hidden" style="width: 20vw; height: 20vw;">
+                    <img class="w-full h-full object-cover" src="./images/sale4.jpg">
+                    <p class="absolute top-2 left-2 bg-red-600 text-white text-sm px-2 py-1 rounded">sale</p>
+                    <img class="absolute bottom-2 right-2 w-7" src="./images/heart.png">
+                </div>
+            </div>
+        </div>
+
+
+        <!--limitedoffer-->
+        <div class="limited-offer-container ">
+            <div class="limited-offer flex p-10 justify-evenly" style="background-color: #1D232C; color: white;">
+                <div class="limited-offer-img ">
+                    <img style="width: 500px; height: 300px; ;" src="./images/dowwnbanner.jpg">
+                </div>
+                <div class="limited-offer-text p-10 text-2xl font-bold">
+                    <h3>Limited Offer</h3>
+                    <h5>35% OFF on this for the first 30 Customers</h5>
+                    <button
+                        style=" border: solid white 2px; border-radius: 30px; background-color: whitesmoke; color: black; margin-top: 10px;"
+                        class="p-2">Shop Now -></button>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="news mt-3" style="text-align: center; ">
+            <h2 class="font-bold text-3xl" style="color: #1D232C;">Join Our News Letter</h2>
+            <p class="text-xl mt-3"> Join Our Newsletter
+                Signup for our email newspaper to get exclusive discounts, updates, and more
+            </p>
+            <div>
+                <input class="border border-black p-2 m-3" style="width:70% ;" type="search">
+            </div>
+            <button
+                style="border: solid ; border-radius: 20px; background-color: #1D232C; color: whitesmoke; padding: 10px;">Subscribe</button>
+        </div>
+
+        <!--footer-->
+        <div class="footer ">
+            <div class="footer-container " style="background-color: #1D232C; color: whitesmoke;">
+                <div class="footer-box-1 p-20">
+                    <h2 class="heading text-2xl font-bold ">Nostra</h2>
+                    <p class="footerpara mt-4">Redefining everyday fashion, one outfit at a time.
+                        Fast, free shipping | Support that’s always on your side
+                    </p>
+                    <div class="footer-icons p-2 ">
+                        <i class="fa-brands fa-instagram mr-2" style="color: white;"></i>
+                        <i class="fa-brands fa-x-twitter mr-2" style="color: white;"></i>
+                        <i class="fa-brands fa-facebook mr-2" style="color: white;"></i>
+                    </div>
+                    <p class="subtle">@2025 Nostra.com</p>
+                </div>
+
+            </div>
+
+
+        </div>
+
+        <script src="index.js"></script>
+
+    </body>
+
+</html>
